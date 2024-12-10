@@ -7,9 +7,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<script defer>
+function open() {
+  document.getElementById("mySidebar").style.width = "40%";
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function open() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
 </head>
 <body>
-    <h1>Bailey Middle School Clubs - 11900 Bailey Rd Cornelius</h1>
+    <h1>Bailey Middle School Clubs</h1>
 </body>
 </html>
 <html>
@@ -37,7 +47,15 @@ main > h1, p, .browser {
 </style>
 </head>
 <body>
-
+  <div class="w3-sidebar w3-bar-block" style="display:none" id="mySidebar">
+    <button onclick="w3_close()" class="w3-bar-item w3-button w3-large">Close &times;</button>
+    <a href="#" class="w3-bar-item w3-button"></a>
+    <a href="#" class="w3-bar-item w3-button"></a>
+    <a href="#" class="w3-bar-item w3-button"></a>
+    <a href="#" class="w3-bar-item w3-button"></a>
+    <a href="#" class="w3-bar-item w3-button"></a>
+    <a href="#" class="w3-bar-item w3-button"></a>
+</div>
 <main>
   <h4 style="color:white;">Clubs and organizations in Bailey Middle school.</h4>
   <p style="color:white;">There are many clubs in Bailey Middle School offering great opportunities from normal education to sports and physical activities.</p>
@@ -56,3 +74,4 @@ main > h1, p, .browser {
 </main>
 </body>
 </html>
+<img src="img_bailey broncos.jpg" alt>"Our schools logo" width="500" height="600">
