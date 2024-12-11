@@ -1,81 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Starting Demo FIle</title>
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-      body {
-        font-family: sans-serif, "Roboto";
-      }
-    </style>
-<script defer>
-function open() {
-  document.getElementById("mySidebar").style.width = "40%";
-  document.getElementById("mySidebar").style.display = "block";
-}
 
-function open() {
-  document.getElementById("mySidebar").style.display = "none";
-}
-</script>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Home</title>
+    
+    
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <h1>Bailey Middle School Clubs</h1>
-</body>
-</html>
-<html>
-<head>
-<style>
-main {
-  margin: 0;
-  padding: 5px;
-  background-color: Maroon;
-}
+    <div class="w3-sidebar w3-bar-block" style="display:none" id="mySidebar">
+        <button onclick="w3_close()" class="w3-bar-item w3-button w3-large">Close &times;</button>
+        <a href="https://iwillbemicrosoftceo.github.io/learning/barcode.html" class="w3-bar-item w3-button">Barcode generator</a>
+        <a href="https://iwillbemicrosoftceo.github.io/learning/qrcodes.html" class="w3-bar-item w3-button">QR Code generator</a>
+        <a href="https://iwillbemicrosoftceo.github.io/learning/tic-tac-toe" class="w3-bar-item w3-button">Tic-Tac-Toe</a>
+        <a href="https://iwillbemicrosoftceo.github.io/learning/calculator" class="w3-bar-item w3-button">JS Calculator</a>
+        <a href="https://iwillbemicrosoftceo.github.io/learning/clock.html" class="w3-bar-item w3-button">Clock (Digital)</a>
+        <a href="https://iwillbemicrosoftceo.github.io/learning/clock2.html" class="w3-bar-item w3-button">Clock (Analog)</a>
+    </div>
 
-main > h1, p, .browser {
-  margin: 10px;
-  padding: 5px;
-}
+    <!-- Page Content -->
+    <div class="w3-teal">
+        <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
+        <div class="w3-container">
+            <h1>My Page</h1>
+        </div>
+    </div>
 
-.browser {
-  background: white;
-}
+    <h1 style="font-family: Bahnschrift; width: 50%">For more updates go to my github.<br />
+    <a href="https://github.com/iwillbemicrosoftceo" class="w3-button">My github <i class="fa fa-github"></i></a>
+    </h1>
 
-.browser > h2, p {
-  margin: 4px;
-  font-size: 90%;
-}
-</style>
-</head>
-<body>
-  <div class="w3-sidebar w3-bar-block" style="display:none" id="mySidebar">
-    <button onclick="w3_close()" class="w3-bar-item w3-button w3-large">Close &times;</button>
-    <a href="#" class="w3-bar-item w3-button"></a>
-    <a href="#" class="w3-bar-item w3-button"></a>
-    <a href="#" class="w3-bar-item w3-button"></a>
-    <a href="#" class="w3-bar-item w3-button"></a>
-    <a href="#" class="w3-bar-item w3-button"></a>
-    <a href="#" class="w3-bar-item w3-button"></a>
-</div>
-<main>
-  <h4 style="color:white;">Clubs and organizations in Bailey Middle school.</h4>
-  <p style="color:white;">There are many clubs in Bailey Middle School offering great opportunities from normal education to sports and physical activities.</p>
-  <article class="browser">
-    <h2><a href="#"> Biking </a></h2>
-    <p>Biking is a club which </p>
-  </article>
-  <article class="browser">
-    <h4>Placeholder</h4>
-    <p>Placeholder</p>
-  </article>
-  <article class="browser">
-    <h4 style="color:rgb(255, 255, 255);"><a href="https://www.usarmyjrotc.com/">JROTC</a></h4>
-    <p color:white;>JROTC is a club focusing on bringing out the best leaders in the US army,navy,airforce,marines ect. The full form of JROTC is Junior Reserve Officers Training Corps. This club goes until High school and you can be chosen as a cadet to go to army school ect.</p>
-  </article>
-</main>
-<br />
-<img src="https://www.cmsk12.org/cms/lib/NC50000755/Centricity/Domain/2546/Bailey.jpg" alt="Our schools logo" />
+      
+        <a href="Factorial.html">Factorial</a>
+    
+    
+    <script>
+        function w3_open() {
+            document.getElementById("mySidebar").style.width = "40%";
+            document.getElementById("mySidebar").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+        }
+    </script>
 </body>
 </html>
