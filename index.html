@@ -11,38 +11,31 @@
 </head>
 <body>
     <div class="w3-sidebar w3-bar-block" style="display:none" id="mySidebar">
-        <button onclick="w3_close()" class="w3-bar-item w3-button w3-large">Close &times;</button>
-        <a href="https://iwillbemicrosoftceo.github.io/learning/barcode.html" class="w3-bar-item w3-button">Barcode generator</a>
-        <a href="https://iwillbemicrosoftceo.github.io/learning/qrcodes.html" class="w3-bar-item w3-button">QR Code generator</a>
-        <a href="https://iwillbemicrosoftceo.github.io/learning/tic-tac-toe" class="w3-bar-item w3-button">Tic-Tac-Toe</a>
-        <a href="https://iwillbemicrosoftceo.github.io/learning/calculator" class="w3-bar-item w3-button">JS Calculator</a>
-        <a href="https://iwillbemicrosoftceo.github.io/learning/clock.html" class="w3-bar-item w3-button">Clock (Digital)</a>
-        <a href="https://iwillbemicrosoftceo.github.io/learning/clock2.html" class="w3-bar-item w3-button">Clock (Analog)</a>
+        <button onclick="close()" class="w3-bar-item w3-button w3-large">Close &times;</button>
+        <a href="" class="w3-bar-item w3-button"></a>
+        <a href="" class="w3-bar-item w3-button"></a>
+        <a href="" class="w3-bar-item w3-button"></a>
+        <a href="" class="w3-bar-item w3-button"></a>
+        <a href="" class="w3-bar-item w3-button"></a>
+        <a href="" class="w3-bar-item w3-button"></a>
     </div>
 
     <!-- Page Content -->
     <div style="background-color: maroon;">
-        <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
+        <button style="background-color: maroon;" class="w3-button w3-xlarge" onclick="open()">☰</button>
         <div class="w3-container">
             <h1>Bailey Middle School Clubs</h1>
         </div>
     </div>
-
-    <h1 style="font-family: Bahnschrift; width: 50%">For more updates go to my github.<br />
-    <a href="https://github.com/iwillbemicrosoftceo" class="w3-button">My github <i class="fa fa-github"></i></a>
-    </h1>
-
-      
-        <a href="Factorial.html">Factorial</a>
     
     
     <script>
-        function w3_open() {
+        function open() {
             document.getElementById("mySidebar").style.width = "40%";
             document.getElementById("mySidebar").style.display = "block";
         }
 
-        function w3_close() {
+        function close() {
             document.getElementById("mySidebar").style.display = "none";
         }
     </script>
