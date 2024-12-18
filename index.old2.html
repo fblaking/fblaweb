@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<style>
+  .topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+.topnav a {
+  float: left;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 15px;
+}
+.topnav a:hover {
+  background-color: #ddd;
+  color: white;
+}
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+</style>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Home</title>
+    
+    
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  
+      
+    <!-- Page Content -->
+    <div style="background-color: maroon;">
+        <button style="background-color: maroon;" class="w3-button w3-xlarge" onclick="open()">☰</button>
+        <div class="w3-container">
+            <h1>Bailey Middle School Clubs</h1>
+            <img src="https://www.cmsk12.org/cms/lib/NC50000755/Centricity/Domain/2546/Bailey.jpg" alt="Our schools logo" />
+        </div>
+    </div>
+    
+    
+    <script>
+        function open() {
+            document.getElementById("mySidebar").style.width = "40%";
+            document.getElementById("mySidebar").style.display = "block";
+        }
+
+        function close() {
+            document.getElementById("mySidebar").style.display = "none";
+        }
+    </script>
+</body>
+</html>
