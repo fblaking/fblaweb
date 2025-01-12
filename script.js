@@ -3,7 +3,7 @@ const googleAppScriptUrl = 'https://script.google.com/macros/s/AKfycbzKczUtTVXfo
 async function fetchData(e) {
     await fetch(e)
     .then(res => res.json())
-    .then(data => console.log(data))
+    .then(data => console.log(data.length))
         
 }
 
