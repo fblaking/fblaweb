@@ -8,9 +8,7 @@ function makeCards(e) {
 
 async function fetchData(e) {
     await fetch(e)
-    .then(res => res.json())
-    .then(data => {
-        
-    })
+    .then(r => r.json())
+    .then(d => makeCards(d))
 }
 fetchData(googleAppScriptUrl)
