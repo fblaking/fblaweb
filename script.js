@@ -10,6 +10,7 @@ async function fetchData(e) {
         output = data
     })
 }
+fetchData(googleAppScriptUrl)
 function makeCard() {
     console.log("datalen " + output.length)
     for(let i = 0; i < datalen; i++) {
@@ -19,5 +20,5 @@ function makeCard() {
     }     
 }
 
-fetchData(googleAppScriptUrl)
+
 makeCard()
