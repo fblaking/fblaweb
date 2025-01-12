@@ -1,9 +1,10 @@
-fetch("https://script.google.com/macros/s/AKfycbzKczUtTVXfohypV-hL1EDAFJEm2CpyRfAHJhi7CsOEQ2djjK7bRuXLqX-6wWjicD2h/exec")
-.then(response=>{
-   response.json()
-}) 
-.then(json=>console.log(json))
-.catch(error=>console.log('something went wrong'))
+const googleAppScriptUrl = "https://script.google.com/macros/s/AKfycbzKczUtTVXfohypV-hL1EDAFJEm2CpyRfAHJhi7CsOEQ2djjK7bRuXLqX-6wWjicD2h/exec"
+
+fetch(googleAppScriptUrl)
+.then(response => response.json())
+.then(data => setRecords(data))
+.then(() => setIsDataLoading(false))                
+.catch(err => console.log(err));
 
 // .then(
 //     e=> {
