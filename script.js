@@ -2,21 +2,12 @@ const googleAppScriptUrl = 'https://script.google.com/macros/s/AKfycbzKczUtTVXfo
 
 async function fetchData(e) {
     await fetch(e)
-    .then(
-        a=> {
-                if(a.ok) {
-                console.log("👍")
-                a.json();
-                }
-                else {
-                console.error("👎")
-                }
-            }
-    )
-    .then(t => console.log(t))
+    .then(res => res.json())
+    .then(data => console.log(data))
+        
 }
 
-
+fetchData(googleAppScriptUrl)
 
 
 // for(let i = 0; i <= data.body.Title.length; i++) {
