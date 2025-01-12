@@ -1,7 +1,7 @@
 const googleAppScriptUrl = "https://script.google.com/macros/s/AKfycbzKczUtTVXfohypV-hL1EDAFJEm2CpyRfAHJhi7CsOEQ2djjK7bRuXLqX-6wWjicD2h/exec"
 
 async function fetchData(e) {
-    fetch(e)
+    await fetch(e)
     .then(
         a=> {
                 if(a.ok) {
@@ -13,7 +13,7 @@ async function fetchData(e) {
                 }
             }
     )
-    .then(a => console.log(a))
+    .then(t => console.log(t))
 }
 
 
