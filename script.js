@@ -9,6 +9,8 @@ async function fetchData(e) {
         datalen = data.length
         output = data
     })
+   console.log(datalen) 
+   console.log(output)
 }
 fetchData(googleAppScriptUrl)
 function makeCard() {
