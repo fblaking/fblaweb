@@ -1,9 +1,13 @@
 .card {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  margin: 10px;
-  padding: 10px;
-  display: inline-block;
   background: #f9f9f9;
+  border-radius: 10%;
+  box-shadow: 0 4px 8px #0003;
+  display: inline-block;
+  height: 160px;
+  margin: 10px;
+  overflow: auto;
+  padding: 10px;
+  width: 220px;
 }
 
 .cards-container {
