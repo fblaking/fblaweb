@@ -7,9 +7,9 @@ async function fetchData(e) {
         
 }
 
-fetchData(googleAppScriptUrl)
+const output = fetchData(googleAppScriptUrl)
 
 
-// for(let i = 0; i <= data.body.Title.length; i++) {
-//     document.getElementById("root").innerHTML = ` <div className="card"><h1>${data.body.Tit}</h1><p>{content}</p></div>`
-// }
+for(let i = 0; i <= output.data.length; i++) {
+    document.getElementById("root").innerHTML = `<div className="card"><h1>${output.data[i].Title}</h1><p>${output.data[i].Content}</p><img src=${output.data[i].Image} /></div>`
+}
