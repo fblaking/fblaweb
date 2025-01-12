@@ -11,6 +11,7 @@ async function fetchData(e) {
     })
 }
 function makeCard() {
+    console.log("hello world")
     for(let i = 0; i <= datalen; i++) {
         document.getElementById("root").innerHTML = `<div className="card"><h1>${output.data[i].Title}</h1><p>${output.data[i].Content}</p><img src=${output.data[i].Image} /></div>`
         console.log(`👍 ${i}`)
