@@ -11,7 +11,7 @@ function makeCards(e) {
 }
 
 function dateFooter() { 
-    document.getElementById("footer").innerHTML = `<p>&copy; ${year} FBLA Project. All Rights Reserved.</p><br /><p>Made by Krishna Murthy, Karthikeya Soora, and Pranav Sasikumar.</p>`
+    document.getElementById("footer").innerHTML = `<p>&copy; ${year} FBLA Project.</p><br /><p>Made by Krishna Murthy, Karthikeya Soora, and Pranav Sasikumar.</p>`
 }
 
 async function fetchData(e) {
