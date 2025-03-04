@@ -6,7 +6,7 @@ function makeCards(e) {
     for(let i = 0; i < e.length; i++) {
         console.log(i)
         //<img src=${e[i].Image} />
-        document.getElementById("root").innerHTML += `<div class="card"><h1>${e[i].Title}</h1><p>${e[i].Content}<br /><a href="${e[i].RedirectPage}">${e[i].RedirectName}</a></p></div>`
+        document.getElementById("root").innerHTML += `<div class="card"><h1>${e[i].Title}</h1><p>Learn More...</a></p></div>`
     }
 }
 
