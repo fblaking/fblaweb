@@ -1,6 +1,4 @@
 const googleAppScriptUrl = 'https://script.google.com/macros/s/AKfycbzKczUtTVXfohypV-hL1EDAFJEm2CpyRfAHJhi7CsOEQ2djjK7bRuXLqX-6wWjicD2h/exec'
-const d = new Date();
-let year = d.getFullYear();
 
 function makeCards(e) {
     for(let i = 0; i < e.length; i++) {
@@ -11,7 +9,7 @@ function makeCards(e) {
 }
 
 function dateFooter() { 
-    document.getElementById("footer").innerHTML = `<p>&copy; ${year} FBLA Project.</p><br /><p>Made by Krishna Murthy, Karthikeya Soora, and Pranav Sasikumar.</p>`
+    document.getElementById("footer").innerHTML = `<p>&copy; 2025 FBLA Project.</p>`
 }
 
 async function fetchData(e) {
