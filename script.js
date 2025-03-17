@@ -4,12 +4,12 @@ function makeCards(e) {
     for(let i = 0; i < e.length; i++) {
         console.log(i)
         //<img src=${e[i].Image} />
-        document.getElementById("root").innerHTML += `<div class="card"><h1>${e[i].Title}</h1><p>Learn More...</a></p></div>`
+        document.getElementById("root").innerHTML += `<div class="card"><h1>${e[i].Title}</h1><a><p>Learn More...</a></p></div>`
     }
 }
 
 function dateFooter() { 
-    document.getElementById("footer").innerHTML = `<p>&copy; 2025 FBLA Project.</p>`
+    document.getElementById("footer").innerHTML = `<p>FBLA Project by: Krishna Murthy & Pranav Sasikumar</p>`
 }
 
 async function fetchData(e) {
