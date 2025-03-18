@@ -6,7 +6,7 @@ function makeCards(e)
     for(let i = 0; i < e.length; i++) {
         //console.log(i)
         //<img src=${e[i].Image} />
-        divRoot.innerHTML += `<div class="card"><h1>${e[i].Title}</h1><p><a href="/clubdetails.html?section=${e[i].Section}">Learn More...</a></p></div>`
+        divRoot.innerHTML += `<div class="card"><h1>${e[i].Title}</h1><p><a href="./clubdetails.html?section=${e[i].Section}">Learn More...</a></p></div>`
     }
 }
 
