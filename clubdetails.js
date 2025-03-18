@@ -8,8 +8,10 @@ function sections(e)
   const sectionParam = urlParams.get('section');
 
   const club = e.find(club => club.Section === sectionParam);
-
-  let clubInfo = `<div class="card"><h1>${club.Title}</h1><p>${club.Description}</p><br/><p><a href="clubs.html">Back to Clubs</p></div>`;
+console.log(club);
+  let clubInfo = `<div class="card"><h1>${club.Title}</h1><p>${club.Description}</p>
+  <img src= ${club.Image} />
+  <br/><p><a href="clubs.html">Back to Clubs</p></div>`;
   divContent.innerHTML += clubInfo; 
 }
 async function fetchData() 
