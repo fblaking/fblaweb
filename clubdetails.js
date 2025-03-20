@@ -11,7 +11,7 @@ function sections(e)
 console.log(club);
   let clubInfo = `<div class="card"><h1>${club.Title}</h1><p>${club.Description}</p>
   <img src= ${club.Image} />
-  <br/><p><a href="clubs.html">Back to Clubs</p></div>`;
+  <br/><p><p>${club.Join}</p><a href="clubs.html">Back to Clubs</p></div>`;
   divContent.innerHTML += clubInfo; 
 }
 async function fetchData() 
